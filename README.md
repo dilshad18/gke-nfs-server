@@ -22,7 +22,7 @@ Before you begin, ensure that you have the following tools installed:
 
 To deploy the NFS server, follow these steps using `glcoud & kubectl`:
 
-#### Step 1: Create a GCP Disk
+ Step 1: Create a GCP Disk
 
 Create a Google Cloud Platform (GCP) persistent disk with a size of 10GB. Replace `ZONE` with your preferred zone.
 Step 1: Create disk in GCP
