@@ -22,19 +22,18 @@ Before you begin, ensure that you have the following tools installed:
 
 To deploy the NFS server, follow these steps using `glcoud & kubectl`:
 
- Step 1: Create a GCP Disk
-
 Create a Google Cloud Platform (GCP) persistent disk with a size of 10GB. Replace `ZONE` with your preferred zone.
-Step 1: Create disk in GCP
+
+#### Step 1: Create disk in GCP
 
 ```bash
 gcloud compute disks create --size=10GB --zone=ZONE gce-nfs-disk
 ```
-Step 2: Connect to GKE Cluster
+#### Step 2: Connect to GKE Cluster
 ```bash
 gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE --project PROJECT_NAME
 ```
-Step 3: Deploy NFS Server
+#### Step 3: Deploy NFS Server
 ```bash
 kubectl apply -f nfs.yaml
 ```
